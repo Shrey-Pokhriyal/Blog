@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+body{
+    background-color:white; 
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.flex-row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.nav
+{
+    background-color:#f4f3ee;
+    min-height: 9vh;
+    overflow: hidden;
+    height: 0;
+    transition: height 1s ease-in-out;
+    /* opacity: 0.8; */
+}
+.title
+{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: 'Architects Daughter', cursive;
+}
+.toggle-collapse
+{
+    position: absolute;
+    top: 0;
+    width: 90%;
+    cursor: pointer;
+}
+.toggle-icon
+{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.4rem 0;
+}
+.toggle-icon i
+{
+    font-size: 1.5rem;
+}
+.navmenu
+{
+    justify-content: space-between;
+}
+.links
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+.links li
+{
+    padding: 1.2rem 1rem;
+    font-size: 1.2rem;
+    font-family: 'Architects Daughter', cursive;
+    position: relative;
+}
+.sociallinks
+{
+    display: flex;
+    flex-direction: row;
+}
+.sociallinks li
+{
+    font-size: 1.2rem;
+    padding: 1rem 0.5rem;
+}
+.links li a:hover 
+{
+ color: grey;
+}
+.sociallinks li a:hover
+{
+    color:#8a817c;
+}
+
+@media only screen and (max-width:843px){
+    .navmenu,.links
+    {
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width:843px)
+{
+    .toggle-collapse
+    {
+        display: none;
+    }
+}
