@@ -9,7 +9,7 @@ body{
 }
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .flex-row
 {
@@ -19,7 +19,7 @@ a{
 }
 .nav
 {
-    background-color:#f4f3ee;
+    background-color:#333d29;
     min-height: 9vh;
     overflow: hidden;
     height: 0;
@@ -32,6 +32,7 @@ a{
     padding: 1rem 0;
     display: block;
     font-family: 'Architects Daughter', cursive;
+    cursor:text;
 }
 .toggle-collapse
 {
@@ -80,11 +81,55 @@ a{
 }
 .links li a:hover 
 {
- color: grey;
+ color: #ddca7d;
 }
 .sociallinks li a:hover
 {
-    color:#8a817c;
+    color:#ddca7d;
+}
+/* ----------section------------- */
+#title
+{
+    background: url(../img/bg1.jpg);
+    background-size: cover;
+    height: 70vh;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    background-blend-mode: soft-light;
+    z-index: -1;
+}
+#title-bg
+{
+margin-top: 1rem;
+padding: 5rem;
+text-align: center;
+color: white;
+}
+#title-bg h1,h3{
+    margin: 0.5rem;
+    opacity: 1;
+}
+#title-bg h1{
+    font-size: 4rem;
+    font-family: 'Architects Daughter', cursive;
+}
+#btn
+{
+    margin-top: 4rem;
+    background-color: #656D4A;
+    border-style: none;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    opacity: 1;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color:#333d29 ;
+    color: white;
 }
 
 @media only screen and (max-width:843px){
